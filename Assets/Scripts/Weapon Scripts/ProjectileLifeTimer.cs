@@ -7,6 +7,6 @@ public class ProjectileLifeTimer : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, timer);
+        //Destroy(gameObject, timer);
     }
 }
