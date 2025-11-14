@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9006116177633337687}
   - component: {fileID: 5628764032686762295}
   - component: {fileID: 2998345026918395863}
+  - component: {fileID: 4245163444730263167}
   m_Layer: 6
   m_Name: Laser
   m_TagString: Projectile
@@ -184,3 +185,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 796c313b38dce8d458061c022b9abddd, type: 3}
   boomEffect: {fileID: 0}
   destroySound: {fileID: 0}
+--- !u!114 &4245163444730263167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736327903229649312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f6b956c003d804b8cba9effdd8068e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileLifeTimer
+  timer: 3

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3271102220262155759}
   - component: {fileID: 4738527724419717977}
   - component: {fileID: 816273742279784700}
+  - component: {fileID: -7802452990119945034}
   m_Layer: 6
   m_Name: Blaster 1
   m_TagString: Projectile
@@ -184,3 +185,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: fe96c61df3d839247847fb6341ff62fc, type: 3}
   boomEffect: {fileID: 0}
   destroySound: {fileID: 0}
+--- !u!114 &-7802452990119945034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8166699226064258777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f6b956c003d804b8cba9effdd8068e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileLifeTimer
+  timer: 3

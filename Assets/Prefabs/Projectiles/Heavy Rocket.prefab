@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6773391211531752526}
   - component: {fileID: 3791082768124387677}
   - component: {fileID: 3363827184405065407}
+  - component: {fileID: -8358912525408136194}
   m_Layer: 6
   m_Name: Heavy Rocket
   m_TagString: Projectile
@@ -184,3 +185,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 4e4edf3d2672cea49a1bd25e549f9d28, type: 3}
   boomEffect: {fileID: 4660563033224423487, guid: 6d52b5f4fbd944726ba966534ac005ac, type: 3}
   destroySound: {fileID: 8300000, guid: cef28ad044b48624fbfeba734e9d6447, type: 3}
+--- !u!114 &-8358912525408136194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2249969408901683646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f6b956c003d804b8cba9effdd8068e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileLifeTimer
+  timer: 3
