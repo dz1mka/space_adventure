@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405233570834038465}
   - component: {fileID: 3854796166820120}
+  - component: {fileID: 4563715458105320694}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -191,11 +192,40 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124211919336793510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b9716f34156a8d4893aad19430d7f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponManager
+  projectiles:
+  - {fileID: 8166699226064258777, guid: d916c67623780484e81e7a386f3a7b7f, type: 3}
+  - {fileID: 612998237577949558, guid: dc44d4f3659bfe2429eb8232521550c8, type: 3}
+  - {fileID: 1736327903229649312, guid: 6a9f6c442243d354c9671e6d35e56e26, type: 3}
+  - {fileID: 2020173854368734115, guid: 0476eda244073a1448b342df38aea475, type: 3}
+  - {fileID: 2249969408901683646, guid: c3ab89e774bcff14b8a7740fc886f062, type: 3}
+  projectileSpawnPoints:
+  - {fileID: 1646157020354489714}
+  - {fileID: 1003314203912996097}
+  - {fileID: 7611132338244211249}
+  shootTimerTreshold: 0.2
+--- !u!114 &4563715458105320694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124211919336793510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponManagerPool
+  projectile: {fileID: 8166699226064258777, guid: d916c67623780484e81e7a386f3a7b7f, type: 3}
+  projectileHolder: {fileID: 0}
+  keyToPressToShoot: 0
+  projectileSpawnPoint: {fileID: 0}
+  shootWaitTime: 0.2
+  isEnemy: 0
 --- !u!1 &3174002050244647926
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +358,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &6193780443004679844
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -359,7 +389,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

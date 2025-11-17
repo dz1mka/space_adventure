@@ -5,8 +5,22 @@ public class ProjectileLifeTimer : MonoBehaviour
     [SerializeField]
     private float timer = 3f;
 
-    private void Start()
+    //private void Start()
+    //{
+    //    //Destroy(gameObject, timer);
+    //}
+
+   private void OnEnable()
     {
-        //Destroy(gameObject, timer);
+        Invoke("DeactivateProjectile", timer);
     }
+
+    void DeactivateProjectile()
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
 }

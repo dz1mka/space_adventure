@@ -119,6 +119,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &101703427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101703428}
+  m_Layer: 0
+  m_Name: Enemy Projectile Holder
+  m_TagString: EnemyProjectileHolder
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &101703428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101703427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &157708285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157708286}
+  m_Layer: 0
+  m_Name: Player Projectile Holder
+  m_TagString: PlayerProjectileHolder
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157708286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157708285}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,40 +402,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1092932275 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1646157020354489714, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-  m_PrefabInstance: {fileID: 3243886612344465179}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1095506543 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1003314203912996097, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-  m_PrefabInstance: {fileID: 3243886612344465179}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1393613768 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2124211919336793510, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-  m_PrefabInstance: {fileID: 3243886612344465179}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1393613770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393613768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponManagerPool
-  projectile: {fileID: 8166699226064258777, guid: d916c67623780484e81e7a386f3a7b7f, type: 3}
-  projectilePool: []
---- !u!4 &1916534320 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7611132338244211249, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-  m_PrefabInstance: {fileID: 3243886612344465179}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3243886612344465179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -382,62 +410,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: projectiles.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectiles.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8166699226064258777, guid: d916c67623780484e81e7a386f3a7b7f, type: 3}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectiles.Array.data[1]'
-      value: 
-      objectReference: {fileID: 612998237577949558, guid: dc44d4f3659bfe2429eb8232521550c8, type: 3}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectiles.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1736327903229649312, guid: 6a9f6c442243d354c9671e6d35e56e26, type: 3}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectiles.Array.data[3]'
-      value: 
-      objectReference: {fileID: 2020173854368734115, guid: 0476eda244073a1448b342df38aea475, type: 3}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectiles.Array.data[4]'
-      value: 
-      objectReference: {fileID: 2249969408901683646, guid: c3ab89e774bcff14b8a7740fc886f062, type: 3}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: projectileSpawnPoints.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectileSpawnPoints.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1092932275}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectileSpawnPoints.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1095506543}
-    - target: {fileID: 3854796166820120, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: 'projectileSpawnPoints.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1916534320}
     - target: {fileID: 4549297675174849196, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 6193780443004679844, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+    - target: {fileID: 4563715458105320694, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
+      propertyPath: projectileHolder
+      value: 
+      objectReference: {fileID: 157708285}
+    - target: {fileID: 4563715458105320694, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
+      propertyPath: keyToPressToShoot
+      value: 106
       objectReference: {fileID: 0}
-    - target: {fileID: 6745341683305586256, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
+    - target: {fileID: 4563715458105320694, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
+      propertyPath: projectileSpawnPoint
+      value: 
+      objectReference: {fileID: 3243886612344465180}
     - target: {fileID: 7714277673048144878, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -481,11 +469,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2124211919336793510, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1393613770}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
+--- !u!4 &3243886612344465180 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1646157020354489714, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
+  m_PrefabInstance: {fileID: 3243886612344465179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -493,3 +483,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 3243886612344465179}
+  - {fileID: 157708286}
+  - {fileID: 101703428}
