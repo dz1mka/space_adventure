@@ -505,25 +505,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 4563715458105320694, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: projectileHolder
-      value: 
-      objectReference: {fileID: 157708285}
-    - target: {fileID: 4563715458105320694, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: keyToPressToShoot
-      value: 106
-      objectReference: {fileID: 0}
-    - target: {fileID: 4563715458105320694, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-      propertyPath: projectileSpawnPoint
-      value: 
-      objectReference: {fileID: 3243886612344465180}
     - target: {fileID: 7714277673048144878, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7714277673048144878, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -25.2
       objectReference: {fileID: 0}
     - target: {fileID: 7714277673048144878, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -562,11 +550,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
---- !u!4 &3243886612344465180 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1646157020354489714, guid: 51f206b48f8982548ac7648cf651381f, type: 3}
-  m_PrefabInstance: {fileID: 3243886612344465179}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
