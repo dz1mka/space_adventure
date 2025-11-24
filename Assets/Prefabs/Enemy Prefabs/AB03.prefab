@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 776567605655791673}
   - component: {fileID: 4045258162189575789}
   - component: {fileID: 5432197518727278764}
+  - component: {fileID: 558601850847210074}
+  - component: {fileID: 8060463215026439578}
+  - component: {fileID: 281847726262707294}
   m_Layer: 8
   m_Name: AB03
   m_TagString: Enemy
@@ -175,7 +178,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664011296763489759}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e1644af64846b3429cbed98300c9bad, type: 3}
   m_Name: 
@@ -185,6 +188,65 @@ MonoBehaviour:
   moveSpeed: 10
   horizontal_MovementThreshold: 10
   vertical_MovementThreshold: 8
+--- !u!114 &558601850847210074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664011296763489759}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfe5d2162db50b46a84d822ec3015d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovementInPoints
+  movementPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 8
+  moveRandomly: 0
+--- !u!114 &8060463215026439578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664011296763489759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e54d71b02c52e442b8087b94f134625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovementRandom
+  min_X: -50
+  max_X: 50
+  min_Y: 0
+  max_Y: 25
+  moveSpeed: 8
+--- !u!114 &281847726262707294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664011296763489759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponManagerPool
+  projectile: {fileID: 8166699226064258777, guid: d916c67623780484e81e7a386f3a7b7f, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 0
+  projectileSpawnPoint: {fileID: 1355560166864164386}
+  shootWaitTime: 1
+  isEnemy: 1
 --- !u!1 &5143503909380515773
 GameObject:
   m_ObjectHideFlags: 0

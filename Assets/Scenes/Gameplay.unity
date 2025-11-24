@@ -557,52 +557,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1451590134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &886702196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 664011296763489759, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
-  m_PrefabInstance: {fileID: 6820313208623248488}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &886702197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886702196}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bfe5d2162db50b46a84d822ec3015d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovementInPoints
-  movementPoints:
-  - {fileID: 1773263377}
-  - {fileID: 1501686181}
-  - {fileID: 525227924}
-  - {fileID: 654272804}
-  - {fileID: 977360957}
-  - {fileID: 363492475}
-  - {fileID: 1876613726}
-  - {fileID: 415276116}
-  - {fileID: 173322762}
-  moveSpeed: 8
-  moveRandomly: 0
---- !u!114 &886702203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886702196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e54d71b02c52e442b8087b94f134625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovementRandom
-  min_X: -50
-  max_X: 50
-  min_Y: 0
-  max_Y: 25
-  moveSpeed: 8
 --- !u!1 &977360956
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,52 +750,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1451590134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1750667079 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4520723428908153694, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
-  m_PrefabInstance: {fileID: 8707210512482011754}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1750667080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750667079}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bfe5d2162db50b46a84d822ec3015d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovementInPoints
-  movementPoints:
-  - {fileID: 1773263377}
-  - {fileID: 1501686181}
-  - {fileID: 525227924}
-  - {fileID: 654272804}
-  - {fileID: 977360957}
-  - {fileID: 363492475}
-  - {fileID: 1876613726}
-  - {fileID: 415276116}
-  - {fileID: 173322762}
-  moveSpeed: 8
-  moveRandomly: 1
---- !u!114 &1750667086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750667079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e54d71b02c52e442b8087b94f134625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovementRandom
-  min_X: -50
-  max_X: 50
-  min_Y: 0
-  max_Y: 25
-  moveSpeed: 8
 --- !u!1 &1773263376
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,13 +877,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1773263377}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1501686181}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 525227924}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 654272804}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[4]'
+      value: 
+      objectReference: {fileID: 977360957}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[5]'
+      value: 
+      objectReference: {fileID: 363492475}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1876613726}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[7]'
+      value: 
+      objectReference: {fileID: 415276116}
+    - target: {fileID: 558601850847210074, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
+      propertyPath: 'movementPoints.Array.data[8]'
+      value: 
+      objectReference: {fileID: 173322762}
     - target: {fileID: 664011296763489759, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
       propertyPath: m_Name
       value: AB03
-      objectReference: {fileID: 0}
-    - target: {fileID: 5432197518727278764, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8418956024601157344, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1020,13 +960,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 664011296763489759, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 886702197}
-    - targetCorrespondingSourceObject: {fileID: 664011296763489759, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 886702203}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
 --- !u!1001 &8707210512482011754
 PrefabInstance:
@@ -1040,10 +974,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: AB06
       objectReference: {fileID: 0}
-    - target: {fileID: 6646375472036113320, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1773263377}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1501686181}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 525227924}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 654272804}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[4]'
+      value: 
+      objectReference: {fileID: 977360957}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[5]'
+      value: 
+      objectReference: {fileID: 363492475}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1876613726}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[7]'
+      value: 
+      objectReference: {fileID: 415276116}
+    - target: {fileID: 7708398815223344854, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+      propertyPath: 'movementPoints.Array.data[8]'
+      value: 
+      objectReference: {fileID: 173322762}
     - target: {fileID: 8253599932310696841, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.333032
@@ -1087,13 +1053,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4520723428908153694, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1750667080}
-    - targetCorrespondingSourceObject: {fileID: 4520723428908153694, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1750667086}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

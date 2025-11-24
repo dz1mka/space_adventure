@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 746cc6f43aaa6d64f9e0c2e86e4cacb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  speed: 30
+  speed: -30
   minDamage: 5
   maxDamage: 10
   spawnSound: {fileID: 8300000, guid: fe96c61df3d839247847fb6341ff62fc, type: 3}
