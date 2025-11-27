@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2244589770006475854}
   - component: {fileID: 7910179416207058143}
   - component: {fileID: 5241812462708777396}
+  - component: {fileID: 3190787082079139534}
   m_Layer: 8
   m_Name: Meteor 3
   m_TagString: Meteor
@@ -271,3 +272,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3190787082079139534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732659157395611923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98008bb8dbd188d49b91bb9930235141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorMovement
+  minSpeed: 4
+  maxSpeed: 10
+  minRotationSpeed: 15
+  maxRotationSpeed: 50
