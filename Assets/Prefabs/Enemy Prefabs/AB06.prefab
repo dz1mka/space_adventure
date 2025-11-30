@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 8844374267882155682}
   - component: {fileID: 2754280785006389896}
   - component: {fileID: 3900353090233961846}
+  - component: {fileID: 1669380835205006103}
   m_Layer: 8
   m_Name: AB06
   m_TagString: Enemy
@@ -375,7 +376,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4520723428908153694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e54d71b02c52e442b8087b94f134625, type: 3}
   m_Name: 
@@ -392,7 +393,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4520723428908153694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
@@ -410,7 +411,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4520723428908153694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
@@ -421,6 +422,22 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 249583714048505068}
   shootWaitTime: 1
   isEnemy: 1
+--- !u!114 &1669380835205006103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4520723428908153694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a15b95163e8ad428e2d0522f81705b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  healthBar: {fileID: 5868577672680249924}
+  health: 100
+  hitEffect: {fileID: 0}
+  destroyEffect: {fileID: 0}
 --- !u!1 &5868577672680249924
 GameObject:
   m_ObjectHideFlags: 0
