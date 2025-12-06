@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2903709939434508570}
   - component: {fileID: 1246693716165512438}
   - component: {fileID: 3771390756254356692}
+  - component: {fileID: 5116558564343752438}
   m_Layer: 8
   m_Name: Meteor 4
   m_TagString: Meteor
@@ -275,3 +276,19 @@ MonoBehaviour:
   maxSpeed: 10
   minRotationSpeed: 15
   maxRotationSpeed: 50
+--- !u!114 &5116558564343752438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096075927094982308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a15b95163e8ad428e2d0522f81705b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  healthBar: {fileID: 0}
+  health: 100
+  hitEffect: {fileID: 1258905992647310, guid: 4b0eb74c082fe47faba29baf3115f462, type: 3}
+  destroyEffect: {fileID: 1681009956557646, guid: 64841f21255e5483a842ec828db83a70, type: 3}
