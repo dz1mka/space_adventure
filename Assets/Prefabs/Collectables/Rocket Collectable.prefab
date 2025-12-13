@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2823432592390735041}
   - component: {fileID: 418553073884395478}
   - component: {fileID: 5313699166714551047}
-  - component: {fileID: 4163836945003091709}
   m_Layer: 0
   m_Name: Rocket Collectable
   m_TagString: Collectable
@@ -156,18 +155,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4163836945003091709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7053001783302537255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36bed22286f5b7c4b8a1dfb3ba30e36e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Collectable
-  type: 3
-  moveSpeed: 5
-  healthValue: 0
