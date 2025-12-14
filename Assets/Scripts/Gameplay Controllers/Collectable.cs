@@ -34,4 +34,9 @@ public class Collectable : MonoBehaviour
        tempPos.y -= moveSpeed * Time.deltaTime;
        transform.position = tempPos;
     }
+
+    private void OnDisable()
+    {
+        //SoundManager.Instance.PlayPickupSound();
+    }
 }

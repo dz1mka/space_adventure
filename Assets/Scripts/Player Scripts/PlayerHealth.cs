@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
                 {
                      playerHealth = playerMaxHealth;
                 }
-                
+                SoundManager.Instance.PlayPickupSound();
                 Destroy(collision.gameObject);
             }
         }
