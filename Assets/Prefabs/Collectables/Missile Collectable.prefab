@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1719467920235775899}
   - component: {fileID: 7212173857247743941}
   - component: {fileID: 2487913573105875554}
+  - component: {fileID: 8999764678689769677}
   m_Layer: 0
   m_Name: Missile Collectable
   m_TagString: Collectable
@@ -155,3 +156,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8999764678689769677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78202678001940759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3c7bff52993664bb6e38e27dbe3481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
+  type: 4
+  moveSpeed: 5
+  healthValue: 0
