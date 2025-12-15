@@ -37,6 +37,6 @@ public class Collectable : MonoBehaviour
 
     private void OnDisable()
     {
-        //SoundManager.Instance.PlayPickupSound();
+        SoundManager.Instance.PlayPickupSound();
     }
 }

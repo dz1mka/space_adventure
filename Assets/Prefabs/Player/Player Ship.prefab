@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 1428461894410111273}
   - component: {fileID: 2164434996007733021}
   - component: {fileID: 4644710741238365353}
+  - component: {fileID: 9067032068876731478}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -224,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponManagerPool
-  projectile: {fileID: 8036206527455540779, guid: c8d57f67e195c4b4684c51ff224e1ef7, type: 3}
+  projectile: {fileID: 5747269244792325421, guid: d4439251e50324e4c969f2af6c182ae8, type: 3}
   projectilePool: []
   keyToPressToShoot: 106
   projectileSpawnPoint: {fileID: 5309381804955369694}
@@ -237,16 +238,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124211919336793510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponManagerPool
-  projectile: {fileID: 2956831172336241432, guid: 3f5eeb8d77fbcc144993f60c76fab333, type: 3}
+  projectile: {fileID: 8036206527455540779, guid: c8d57f67e195c4b4684c51ff224e1ef7, type: 3}
   projectilePool: []
   keyToPressToShoot: 107
   projectileSpawnPoint: {fileID: 5309381804955369694}
-  shootWaitTime: 0.2
+  shootWaitTime: 0.4
   isEnemy: 0
 --- !u!114 &1428461894410111273
 MonoBehaviour:
@@ -255,16 +256,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124211919336793510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponManagerPool
-  projectile: {fileID: 5747269244792325421, guid: d4439251e50324e4c969f2af6c182ae8, type: 3}
+  projectile: {fileID: 2956831172336241432, guid: 3f5eeb8d77fbcc144993f60c76fab333, type: 3}
   projectilePool: []
   keyToPressToShoot: 108
   projectileSpawnPoint: {fileID: 5309381804955369694}
-  shootWaitTime: 0.2
+  shootWaitTime: 0.4
   isEnemy: 0
 --- !u!114 &2164434996007733021
 MonoBehaviour:
@@ -273,7 +274,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124211919336793510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
@@ -282,7 +283,7 @@ MonoBehaviour:
   projectilePool: []
   keyToPressToShoot: 111
   projectileSpawnPoint: {fileID: 5309381804955369694}
-  shootWaitTime: 0.2
+  shootWaitTime: 1
   isEnemy: 0
 --- !u!114 &4644710741238365353
 MonoBehaviour:
@@ -291,7 +292,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124211919336793510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7aa0417c8bf36744b3691e060a13a79, type: 3}
   m_Name: 
@@ -300,8 +301,25 @@ MonoBehaviour:
   projectilePool: []
   keyToPressToShoot: 112
   projectileSpawnPoint: {fileID: 5309381804955369694}
-  shootWaitTime: 0.2
+  shootWaitTime: 2
   isEnemy: 0
+--- !u!114 &9067032068876731478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124211919336793510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66358ce52ba95ba4da5f81c142f1fa95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponUpgrade
+  weapons:
+  - {fileID: 2155405450182588123}
+  - {fileID: 1428461894410111273}
+  - {fileID: 2164434996007733021}
+  - {fileID: 4644710741238365353}
 --- !u!1 &3174002050244647926
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +402,7 @@ GameObject:
   - component: {fileID: 939532740756572643}
   - component: {fileID: 3743182517818806118}
   - component: {fileID: 7599994853054534668}
+  - component: {fileID: 1451648815533115903}
   m_Layer: 9
   m_Name: Player Ship
   m_TagString: Player
@@ -543,6 +562,19 @@ MonoBehaviour:
   playerMaxHealth: 100
   playerExplosionFX: {fileID: 1493211344075380, guid: d050d6f0895e64926bcad437c907f1a4, type: 3}
   playerDamageFX: {fileID: 1929564232946276, guid: ad5d54c9542814801ab5b2860b43e093, type: 3}
+--- !u!114 &1451648815533115903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4549297675174849196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4ef29b1f6589c43bfb5ecca2159bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUpgrades
+  weaponUpgrade: {fileID: 9067032068876731478}
 --- !u!1 &5192695624203340347
 GameObject:
   m_ObjectHideFlags: 0

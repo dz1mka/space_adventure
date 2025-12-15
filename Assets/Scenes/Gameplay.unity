@@ -1175,13 +1175,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket Collectable
       objectReference: {fileID: 0}
-    - target: {fileID: 7053001783302537255, guid: 6749e5c4bef797748a8de5b1a8cf74dd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8878354680296125935, guid: 6749e5c4bef797748a8de5b1a8cf74dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.91826
+      value: -19.4
       objectReference: {fileID: 0}
     - target: {fileID: 8878354680296125935, guid: 6749e5c4bef797748a8de5b1a8cf74dd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1293,13 +1289,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blaster 2 Collectable
       objectReference: {fileID: 0}
-    - target: {fileID: 7192895423739420789, guid: 24e4b8c9fbae9da42a669697b9fce7a0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8035206013765324784, guid: 24e4b8c9fbae9da42a669697b9fce7a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.57
+      value: 15.7
       objectReference: {fileID: 0}
     - target: {fileID: 8035206013765324784, guid: 24e4b8c9fbae9da42a669697b9fce7a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1352,7 +1344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2900391546154421279, guid: c56438c6eadf5e84db8d923ffa2f233c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.53
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 2900391546154421279, guid: c56438c6eadf5e84db8d923ffa2f233c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1394,10 +1386,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blaster 1 Collectable
       objectReference: {fileID: 0}
-    - target: {fileID: 5725378664509623301, guid: c56438c6eadf5e84db8d923ffa2f233c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1415,13 +1403,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Missile Collectable
       objectReference: {fileID: 0}
-    - target: {fileID: 78202678001940759, guid: 1f3474ed5d875004b85f2d51866c30f5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1589162493446586265, guid: 1f3474ed5d875004b85f2d51866c30f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.94
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 1589162493446586265, guid: 1f3474ed5d875004b85f2d51866c30f5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1527,7 +1511,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 3243886612344465179}
   - {fileID: 157708286}
   - {fileID: 101703428}
   - {fileID: 1366674522}
@@ -1540,3 +1523,4 @@ SceneRoots:
   - {fileID: 8095184166338836246}
   - {fileID: 5067377040450223609}
   - {fileID: 6453087844806860180}
+  - {fileID: 3243886612344465179}
