@@ -16,6 +16,13 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField]
     private GameObject destroyEffect;
 
+    private DropCollectable dropCollectable;
+
+    private void Awake()
+    {
+        dropCollectable = GetComponent<DropCollectable>();
+    }
+
     public void TakeDamage(float damageAmount, float damageResistance)
     {
         damageAmount -= damageResistance;
@@ -27,6 +34,9 @@ public class EnemyHealth : MonoBehaviour
             Instantiate(destroyEffect, transform.position, Quaternion.identity);
 
             SoundManager.Instance.PlayDestroySound();
+
+            dropCollectable.CheckToSpawnCollectable();
+
             Destroy(gameObject);
         }
         else
