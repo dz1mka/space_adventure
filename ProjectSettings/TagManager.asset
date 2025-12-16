@@ -60,5 +60,8 @@ TagManager:
   - name: Health
     uniqueID: 49473573
     locked: 0
+  - name: BG
+    uniqueID: 640146707
+    locked: 0
   m_RenderingLayers:
   - Default
