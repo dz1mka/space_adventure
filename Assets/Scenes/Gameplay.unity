@@ -275,6 +275,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 664011296763489759, guid: 680266e14a53db0409d78934c38e4de8, type: 3}
   - {fileID: 4520723428908153694, guid: 01f2687485364d14b83df8e1c1d3d81d, type: 3}
+  spawnedEnemies: []
   spawnPoints:
   - {fileID: 1406702548}
   - {fileID: 1776032095}
@@ -372,7 +373,7 @@ GameObject:
   - component: {fileID: 390907563}
   m_Layer: 5
   m_Name: Ship Health
-  m_TagString: Untagged
+  m_TagString: PlayerHealth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -444,7 +445,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
