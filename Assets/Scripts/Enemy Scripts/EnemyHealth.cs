@@ -31,7 +31,20 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
+
+            health = 0;
+
             Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
+            if(gameObject.CompareTag(TagManager.ENEMY_TAG))
+            {
+                GameplayUIController.Instance.SetInfo(2);
+                EnemySpawner.instance.CheckToSpawnNewWave(gameObject);
+            }
+            else if(gameObject.CompareTag(TagManager.METEOR_TAG))
+            {
+                GameplayUIController.Instance.SetInfo(3);
+            }
 
             SoundManager.Instance.PlayDestroySound();
 

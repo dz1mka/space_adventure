@@ -23,7 +23,9 @@ public class SoundManager : MonoBehaviour
 
     public void PlayPickupSound()
     {
-        if(Random.Range(0, 2) > 0)
+        if (this == null) return;
+
+        if (Random.Range(0, 2) > 0)
             AudioSource.PlayClipAtPoint(pickupSound1, transform.position);
         else
             AudioSource.PlayClipAtPoint(pickupSound2, transform.position);

@@ -39,4 +39,6 @@ public class Collectable : MonoBehaviour
     {
         SoundManager.Instance.PlayPickupSound();
     }
+
+
 }

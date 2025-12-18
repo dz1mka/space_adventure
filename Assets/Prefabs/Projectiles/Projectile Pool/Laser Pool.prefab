@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   speed: 45
-  minDamage: 9
-  maxDamage: 9
+  minDamage: 100
+  maxDamage: 100
   spawnSound: {fileID: 8300000, guid: 796c313b38dce8d458061c022b9abddd, type: 3}
   boomEffect: {fileID: 0}
   destroySound: {fileID: 0}

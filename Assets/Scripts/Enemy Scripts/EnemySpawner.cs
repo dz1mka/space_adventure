@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] enemies;
 
+    [SerializeField]
     private List<GameObject> spawnedEnemies = new List<GameObject>();
 
     [SerializeField]
@@ -45,6 +46,8 @@ public class EnemySpawner : MonoBehaviour
 
             spawnedEnemies.Add(newEnemy);
         }
+
+       GameplayUIController.Instance.SetInfo(1);
 
     }
 
