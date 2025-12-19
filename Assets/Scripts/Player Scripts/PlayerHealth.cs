@@ -38,6 +38,10 @@ public class PlayerHealth : MonoBehaviour
         {
             Instantiate(playerExplosionFX, transform.position, Quaternion.identity);
             SoundManager.Instance.PlayDestroySound();
+
+            GameOverUIController.instance.OpenGameOverPanel();
+            
+
             Destroy(gameObject);
         }
         else
